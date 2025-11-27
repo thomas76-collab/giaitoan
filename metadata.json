@@ -1,0 +1,5 @@
+{
+  "name": "Trợ lý toán thầy Trần Hoài Thanh ver2",
+  "description": "Một trợ lý AI chuyên nghiệp giúp giải các bài toán THPT từ ảnh hoặc file PDF. Ứng dụng cung cấp lời giải chi tiết, từng bước, với các công thức toán học được định dạng bằng LaTeX.",
+  "requestFramePermissions": []
+}
