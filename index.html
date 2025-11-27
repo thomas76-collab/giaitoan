@@ -34,25 +34,6 @@
   }
 }
 </script>
-
-<!-- Environment Variables Setup Script -->
-<script>
-  // Cấu hình biến môi trường
-  // QUAN TRỌNG: Trên Vercel, thêm biến VITE_GOOGLE_AI_API_KEY trong Settings > Environment Variables
-  
-  window.ENV = {
-    // Lấy API key từ biến môi trường (Vercel sẽ inject vào build time)
-    GOOGLE_AI_API_KEY: import.meta.env?.VITE_GOOGLE_AI_API_KEY || '',
-    
-    // Hoặc nếu dùng process.env (cho Node.js/Next.js)
-    // GOOGLE_AI_API_KEY: process.env.VITE_GOOGLE_AI_API_KEY || '',
-  };
-
-  // Kiểm tra xem API key có tồn tại không
-  if (!window.ENV.GOOGLE_AI_API_KEY) {
-    console.warn('⚠️ API key chưa được cấu hình. Vui lòng thêm VITE_GOOGLE_AI_API_KEY trong Vercel Environment Variables.');
-  }
-</script>
 </head>
 <body>
     <div id="root"></div>
